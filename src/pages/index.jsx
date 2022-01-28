@@ -1,3 +1,4 @@
 import {LoginPage} from "./LoginPage";
 import {HomePage} from './HomePage'
-export {LoginPage,HomePage};
+import {NotFoundPage} from "./NotFoundPage";
+export {LoginPage,HomePage,NotFoundPage};

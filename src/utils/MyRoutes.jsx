@@ -1,7 +1,8 @@
 import { useRoutes } from "react-router-dom";
-import { HomePage, LoginPage } from "../pages";
+import { HomePage, LoginPage, NotFoundPage } from "../pages";
 import React from "react";
 import ProtectedRoutes from "./ProtectedRoutes";
+import { Navigation } from "../components";
 export default () =>useRoutes([
   {
     path: "login",
@@ -16,5 +17,9 @@ export default () =>useRoutes([
         element: <HomePage/>
       },
     ],
+  },
+  {
+    path: "*",
+    element:(<><Navigation/> <NotFoundPage/></>)
   },
 ])
