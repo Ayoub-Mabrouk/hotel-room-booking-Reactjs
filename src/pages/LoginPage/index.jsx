@@ -10,8 +10,8 @@ export function LoginPage() {
   useEffect(() => {
     if (FormData) {
       axios
-        .post("http://localhost:3000/api/v1/users/login", FormData)
-        .then(res=>res.status == 200 && setAuth({ loggedIn: true }))
+        .post("http://localhost:5000/api/v1/users/login", FormData)
+        .then(res=>res.status === 200 && setAuth({ loggedIn: true }))
         .catch((err) => console.log(err.response));
     }
   }, [FormData]);

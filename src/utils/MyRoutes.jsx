@@ -3,7 +3,7 @@ import { HomePage, LoginPage, NotFoundPage } from "../pages";
 import React from "react";
 import ProtectedRoutes from "./ProtectedRoutes";
 import { Navigation } from "../components";
-export default () =>useRoutes([
+const Routers =  () =>useRoutes([
   {
     path: "login",
     element: <LoginPage/>
@@ -23,3 +23,4 @@ export default () =>useRoutes([
     element:(<><Navigation/> <NotFoundPage/></>)
   },
 ])
+export default Routers
