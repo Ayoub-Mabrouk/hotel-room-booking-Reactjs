@@ -5,7 +5,6 @@ import { AuthContext_Component } from "./store/AuthContext";
 import {useAuth} from './utils/useAuth';
 
 function App() {
-  
   return (
       <MyRoutes />
   );

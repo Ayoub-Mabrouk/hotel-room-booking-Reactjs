@@ -8,13 +8,13 @@ export function LoginPage() {
   const { auth, setAuth } = useContext(AuthContext);
   const navigate = useNavigate();
   useEffect(() => {
-    if (FormData) {
+    if (FormData) {  
       axios
         .post("http://localhost:3000/api/v1/users/login", FormData)
         .then(res=>res.status == 200 && setAuth({ loggedIn: true }))
         .catch((err) => console.log(err.response));
     }
-  }, [FormData]);
+  },[FormData]);
   useEffect(() => {
     if (auth.loggedIn) {
       navigate("/", {

@@ -15,7 +15,7 @@ export default () =>useRoutes([
       {
         path: "/",
         element: <HomePage/>
-      },
+      }
     ],
   },
   {
